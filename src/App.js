@@ -1,6 +1,8 @@
 import {useState} from 'react';
 import './App.css';
+// The React useState Hook allows us to track state in a function component.
 
+// State generally refers to data or properties that need to be tracking in an application.
 function App() {
   const [color, setColor] = useState('red');
   // ? example 1
@@ -61,6 +63,7 @@ function App() {
       <hr />
       <h1 style={{marginTop: '80px'}}>Count : {count} </h1>
       <button onClick={ChangeCount}>Increase</button>
+      <hr />
     </div>
   );
 }
