@@ -1,5 +1,4 @@
-import {useState} from 'react';
-// The React useState Hook allows us to track state in a function component.
+import {useState} from 'react'; // The React useState Hook allows us to track state in a function component.
 
 // State generally refers to data or properties that need to be tracking in an application.
 function UseState() {
@@ -48,6 +47,7 @@ function UseState() {
 
     setCount((prev) => prev + 4);
   };
+
   return (
     <div className='App'>
       <h1>My favorite color is {color}</h1>

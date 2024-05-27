@@ -17,9 +17,17 @@ const UseEffect = () => {
   useEffect(() => {
     setTimeout(() => {
       setCount((count) => count + 1);
+      console.log('Hello from useEffect');
+      return () => {
+        setCount(0);
+        console.log('Memory cleaned');
+      };
     }, 2000);
-    /** adding empty dependency it invokes only onces he function in use effect call back function  when the component is loaded it invokes only onces  */
+    /**
+     *  arrays is empty or not but the webpage is load the use effect is called
+     *  adding  empty dependency it invokes only onces he function in use effect call back function  when the component is loaded it invokes only onces  */
   }, [count, name]);
+  // }, []);
   /** put variables inside the dependencies [] it invokes if every time the component will be changed    we can also add multiple variables inside the arrays*/
 
   return (
